@@ -117,7 +117,7 @@ ml_models_classification <- function(model, prd_subcat) {
     #                      eval_metric = "auc",
     #                      eval_metric = "merror"
     #                      )
-    saveRDS(model_fit, "xgb_model.rds") # save the model to reduce run time in shiny
+    # saveRDS(model_fit, "xgb_model.rds") # save the model to reduce run time in shiny
     readRDS("xgb_model.rds")
     preds_fit_test <- predict(model_fit, dtest, type = "class") |> as.data.frame()
     preds_fit_train <- predict(model_fit, dtrain, type ="class") |> as.data.frame()
