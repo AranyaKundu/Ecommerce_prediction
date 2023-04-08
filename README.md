@@ -8,3 +8,8 @@ Finally, I have done time series analysis of the data. Here I tried to fit multi
 I converted the whole analysis in the form of a shiny dashboard where the user can change different parameters of and visualize the data. They can modify and choose different machine learning models and check the output. <br>
 The shiny dashboard can be accessed through this link: <br>
 https://aranya-kundu.shinyapps.io/ecommerceanalysis
+
+#### XG boost Model
+
+I have uploaded the XG boost model as a separate file. This is to increase the swiftness of operation in the dashboard. However, the code for the actual model has been commented out and is present in the file `ml_models.R`. <br>
+The model parameters can be changed and rerun and as required by the user.
